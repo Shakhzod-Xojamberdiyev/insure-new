@@ -1,0 +1,156 @@
+/*snappy section*/
+
+.snappy{
+    margin-top: 140px;
+    margin-bottom: 140px;
+}
+.snappy__wrap{
+    margin: 0 auto;
+    text-align: center;
+    max-width: 330px;
+}
+.snappy__line{
+    margin: 0 auto;
+    display: block;
+    width: 150px;
+    height: 1px;
+    background: #C396C6;
+}
+.snappy__title{
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 48px;
+    letter-spacing: -0.666667px;
+    color: #2C2830;
+}
+.snappy__list{
+    padding-top: 100px;
+    @include ul-unstiled;
+}
+.snappy__item{
+    width: 100%;
+    max-width: 400px;
+    padding-top: 50px;
+    
+    
+    &:first-child::before{
+        margin: 0 auto;
+        content: "";
+        display: block;
+        background-image: url("../images/lightning.svg");
+        width: 86px;
+        height: 86px;
+    }
+    &:nth-child(2)::before{
+        margin: 0 auto;
+        content: "";
+        display: block;
+        background-image: url("../images/money.svg");
+        width: 86px;
+        height: 86px;
+    }
+    &:last-child::before{
+        margin: 0 auto;
+        content: "";
+        display: block;
+        background-image: url("../images/person.svg");
+        width: 86px;
+        height: 86px;
+    }
+    
+}
+.snappy__new-title{
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 38px;
+    letter-spacing: -0.388889px;
+    color: #2C2830;
+}
+.snappy__text{
+    font-family: 'Karla';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #837D88;
+}
+@include mobile-first (675px){
+    .snappy__wrap{
+        margin: 0 auto;
+        text-align: center;
+        max-width: 100%;
+    }
+    .snappy__list{
+        text-align: center;
+        padding-top: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .snappy__item{
+        max-width: 300px;
+        &:nth-child(2){
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+        &:nth-child(3){
+            margin: 0 auto;
+        }
+    }
+}
+@include mobile-first(750px){
+    .snappy__list{
+        text-align: center;
+        padding-top: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+}
+@include mobile-first (1000px){
+    .snappy__wrap{
+        margin: 0 auto;
+        text-align: left;
+        max-width: 100%;
+    }
+    .snappy__line{
+        margin: 0;
+    }
+    .snappy__list{
+        text-align: left;
+        padding-top: 0;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .snappy__item{
+        max-width: 350px;
+        &:first-child::before{
+            margin: 0;
+            content: "";
+            display: block;
+            background-image: url("../images/lightning.svg");
+            width: 86px;
+            height: 86px;
+        }
+        &:nth-child(2)::before{
+            margin: 0;
+            content: "";
+            display: block;
+            background-image: url("../images/money.svg");
+            width: 86px;
+            height: 86px;
+        }
+        &:last-child::before{
+            margin: 0;
+            content: "";
+            display: block;
+            background-image: url("../images/person.svg");
+            width: 86px;
+            height: 86px;
+        }
+    }
+    .snappy__text{
+
+    }
+}

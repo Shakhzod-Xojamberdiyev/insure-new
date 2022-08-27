@@ -1,0 +1,123 @@
+/*footer*/
+.end{
+    background-image: url("../images/main-line-m.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: calc(50% - 200px) calc(50% - 565px);
+    
+    background-color: #FAFAFA;
+}
+.end__inner{
+    
+}
+.end__top{
+    padding-top: 88px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.end__social{
+    padding-top: 32px;
+    @include ul-unstiled;
+    display: flex;
+    align-items: center;
+}
+.end__social-list{
+    padding-left: 16px;
+    &:first-child{
+        padding-left: 0;
+    }
+}
+.end__social-link{
+    
+}
+.end__svg{
+    
+    &:hover{
+        fill: #2C2830;;
+    }
+}
+.end__line{
+    margin-top: 40px;
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #DADADA;
+}
+
+.end__bottom{
+    padding-bottom: 88px;
+}
+.end__list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @include ul-unstiled;
+    
+}
+.end__item{
+    padding-top: 40px;
+}
+.end__title{
+    font-family: 'Karla';
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 1.5px;
+    color: #837D88;
+}
+.end__new-list{
+    padding-top: 20px;
+    @include ul-unstiled;
+}
+.end__new-item{
+    padding-top: 16px;
+}
+.end__new-link{
+    text-decoration: none;
+    font-family: 'Karla';
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    letter-spacing: 1.5px;
+    color: #2D2641;
+    &:hover{
+        text-decoration-line: underline ;
+    }
+}
+
+@include mobile-first (675px){
+    .end{
+        background-position: calc(50% - 300px) calc(50% - 330px);
+        
+    }
+    .end__top{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .end__social{
+        padding-top: 0;
+    }
+    
+    .end__list{
+        display: flex;
+        // flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: flex-start;
+        
+    }
+    .end__item{
+        text-align: left;
+    }
+}
+@include mobile-first (1000px){
+    .end{
+        background-position: calc(50% - 500px) calc(50% - 330px);
+        
+    }
+}
